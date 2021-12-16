@@ -1,5 +1,5 @@
-import React from 'react'
-import './ScreenHeading.css'
+import React from 'react';
+import './ScreenHeading.css';
 
 export default function ScreenHeading(props) {
     return (
@@ -8,13 +8,13 @@ export default function ScreenHeading(props) {
                 <span>{props.title}</span>
             </div>
 
-            {
-                (props.subHeading)?(
-                    <div className="screen-sub-heading">
-                        <span>{props.subHeading}</span>
-                    </div>
-                ): <div></div>
-            }
+            {props.subHeading ? (
+                <div className="screen-sub-heading">
+                    <span>{props.subHeading}</span>
+                </div>
+                ) : (
+                <div></div>
+                )}
 
             <div className="heading-seperator">
                 <div className="seperator-line">
