@@ -46,7 +46,7 @@
     margin: 0 0 5px 0;
 }
 
-.highligh{
+.highlight{
     display: flex;
     align-items: center;
     margin: 5px 0;
@@ -63,4 +63,34 @@
 
 .about-me-options .highlighted-btn {
     margin: 0 0 0 30px;
+}
+
+/* IPad Pro Responsive*/
+@media only screen and (max-width: 1110px) {
+    .about-me-parent{
+        width: 88%;
+    }
+
+}
+
+@media only screen and (max-width: 898px) {
+    .about-me-profile{
+        display: none;
+    }
+    .about-me-details{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 466px) {
+    .about-me-options{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-options .highlighted-btn{
+        margin: 24px 0 0 0 !important;
+    }
+    .about-me-options button{
+        width: 100%;
+    }
 }
